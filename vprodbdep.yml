@@ -18,7 +18,7 @@ spec:
         - name: vprodb
           image: vprofile/vprofiledb:V1
           args:
-            - "ignore-db-directory=lost+found"
+            - "--ignore-db-directory=lost+found"
           ports:
             - containerPort: 3306
               name: vprodb-port
